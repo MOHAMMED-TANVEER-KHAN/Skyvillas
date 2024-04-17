@@ -1,0 +1,366 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    height: 60px;
+}
+.logo {
+    padding: 5px;
+    width: 187px;
+    height: 145px;
+    text-align: center;
+    background: #fff;
+    border-radius: 0 0 50% 50%;
+    box-shadow: 1px 6px 60px #666;
+    border: solid 3px var(--primary);
+    overflow: hidden; 
+}
+
+.logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+   
+}
+@media screen and (max-width: 768px) {
+    .logo img {
+      width: auto;
+      height: auto;
+    }
+  }
+
+.banner-bg .img-fluid{
+    width: 100%;
+    height:130vh;
+}
+@media screen and (max-width: 768px) {
+    .big_banner img {
+      height: auto;
+    }
+  }
+.banner-bg{
+    position: relative;
+}
+.banner-bg::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+.banner{
+    position: relative;
+}
+.first_container{
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    color: white;
+    padding: 5px;
+}
+.navbar-toggler {
+    position: absolute;
+    bottom: 12px;
+    right: 2px; 
+    z-index: 1000; 
+}
+.first_sec_h1{
+    font-size: 48px;
+    font-family: century gothic;
+    font-weight: bold;
+}
+h4 span{
+    margin: 5px 0;
+    background: rgba(0,0,0,.7);
+    font-size: 26px;
+    padding: 4px 6px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    display: inline-block;
+    font-family:'Roboto', sans-serif ;
+}
+.bnr_li  {
+    width: fit-content;
+    display: block;
+    background: rgba(0,0,0,.7);
+    font-size: 21px;
+    font-weight: 700;
+    padding: 5px 8px 5px 8px;
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+}
+#bnr_li_colr{
+    color: rgba(250, 165, 8, 0.737);
+}
+#bnr_li{
+    width: fit-content;
+    display: block;
+    background: rgba(0,0,0,.7);
+    font-size: 21px;
+    font-weight: 700;
+    padding: 5px 8px 5px 8px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 2px;
+
+}
+ul{
+    list-style-type: none;
+    margin-left: -30px;
+}
+.booking-form{
+    width: 380px;
+    padding: 10px 25px;
+    margin-right: 80px;
+    border-radius: 20px;
+    background: rgba(17, 21, 33, 0.9) url(images/form-bg.png) center bottom no-repeat;
+    background-size: 92%;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-top: -110px;
+}
+.form-control{
+    margin-left: 13px;
+    background-color: rgba(17, 21, 33, 0.10);
+    border-color: transparent;
+    color: #000; 
+    border-bottom: 1px solid #41444deb;
+    box-shadow: none;
+    outline: none;
+    border-radius: 0;
+    font-size: 15px;
+    height: auto;
+    color: var(--white);
+    
+}
+.booking-form .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+    
+    
+}
+.booking-form .form-control:focus, .booking-form .form-control:valid{
+  color: white;
+}
+.frm_p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 10px;
+}
+.btn {
+    background-color: rgba(248, 62, 29, 0.766);
+    border-color:  rgba(248, 62, 29, 0.766);
+    color: white; 
+    transition: background-color 0.3s ease; 
+}
+
+.btn:hover {
+    background-color: transparent;
+    color:  rgba(248, 62, 29, 0.766);
+    border-color:  rgba(248, 62, 29, 0.766);
+    font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+    .booking-form {
+        display: none;
+    }
+}
+.features .features-img {
+    height: 100%;
+    
+}
+.features .features-img img{
+    width: 108%;
+    height: 100%;
+    object-fit: cover;
+    left: 0;
+    margin-left: -12px; 
+    
+  }
+  
+ .features-details{
+    background-color: rgba(0, 0, 0, 0.805);
+    color: white;
+    padding: 20px;
+    font-family: verdana;
+    margin-right: -12px;
+    text-align: justify;
+    
+ }
+ @media (max-width: 992px) {
+    .pl0 {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+  }
+
+ .carousel-item{
+    transition: none; 
+ }
+  .carousel-indicators {
+    margin-bottom: -30px;
+    text-align: center;
+}
+
+.shop-section img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: 0.3s linear;
+}
+.shop-section .box .image{
+    overflow: hidden;
+}
+.shop-section .box:hover img{
+    transform: scale(1.1);
+}
+.shop-section .btn{
+    margin-top: 26px;
+    padding: 6px 38px;
+    margin-bottom: 60px;
+}
+.font_fam{
+    font-family: century gothic;
+}
+.h4_fam{
+    font-weight: normal;
+    font-family: verdana;
+}
+
+#Gallery {
+    background-color: #e4dfdfec;
+    padding-bottom: 30px;
+}
+
+.tab .nav-pills{
+   justify-content: center;
+}
+.tab .nav-pills li{
+    max-width: 100px;
+    text-align: center;
+    display: inline-block;
+}
+.tab .nav-pills li button{
+    width: auto;
+    color: tomato;
+    font-size: 16px;
+    font-family: verdana;
+    position: relative;
+}
+.tab .nav-pills li button.active,
+.tab .nav-pills li.active button:focus,
+.tab .nav-pills li.active button:hover{
+    background: transparent;
+    color: var(--primary);
+    border-color: var(--primary);
+    border-bottom: 2px solid var(--primary);
+    border-radius: 0;
+    transition: background 0.20s linear 0s;
+
+}
+#scnd_carousel_Indicators{
+    display: none;
+}
+.h1_font{
+    font-family: sans-serif;
+    color: black;
+    
+}
+.location-img img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.map-section .tab .nav-pills li{
+    max-width: 170px;
+}
+.about-section{
+    background-color: rgb(138, 58, 30);
+    padding: 50px 0;
+    color: #fff;
+    text-align: center;
+}
+.booking-section{
+    padding: 50px 70px;
+    margin-top: 0;
+    background-image: url('images/frm-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background: #111521;
+    
+}
+.booking-section h2.title{
+    color: rgb(138, 58, 30);
+}
+.booking-section p{
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+  }
+  
+  .booking-section {
+    position: relative;
+    background: #111521 url(images/feature-bg.jpg) center center repeat;
+  }
+  .booking-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #13192d; /* Adjust the color and opacity as needed */
+   
+  }
+
+.footer{
+    background-color: black;
+    font-size: 12px;
+    color: #ad8689;
+}
+.booking-section .form-control::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+}
+.booking-section input[type="text"],.booking-section input[type="email"],.booking-section input[type="tel"],.booking-section textarea{
+    background-color: transparent;
+    color: white;
+} 
+
+#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 15px; 
+    right: 15px; 
+    z-index: 99; 
+    border: none; 
+    outline: none;
+    background-color: rgb(138, 58, 30); 
+    color: white; 
+    cursor: pointer;
+    padding: 18px; 
+    border-radius: 50%;
+    font-size: 25px;
+}
+#myBtn:hover {
+    background-color: black;
+    transition: background-color 1.3s ;
+}
+
+::-webkit-scrollbar {
+    width: 13px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(138, 58, 30); 
+    border: 1px solid rgb(138, 58, 30);
+}
+ 
